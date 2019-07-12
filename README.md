@@ -1,5 +1,5 @@
 # Docker-Ansible
-##  An automationf or installing docker-ce and docker-compose on Debian 9
+##  An automationf for installing docker-ce and docker-compose on Debian 9
 ---
 Define your servers in inventory file
 ```
