@@ -1,0 +1,13 @@
+- name: Setup ansible
+  hosts: all
+  tags: ['pre-deploy']
+  gather_facts: no
+  #become: yes
+  tasks:
+    - name: Update apt packages
+      raw:  apt-get update
+      tags: ['debian']
+
+    - name: Install python & aptitude for ansible
+      raw:  apt-get install python  -y
+      tags: ['debian']
